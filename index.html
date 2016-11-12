@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://
+		maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/
+		bootstrap.min.css">
+		<meta charset="utf-8">
+		<style>
+			img {
+				margin: 20px;
+			}
+			body{
+				background-color: white;
+			}
+			.Bodhi, .container, .input{
+				text-align: center;
+				color: blue;
+				margin: 20px;
+			}
+			.swag{
+				text-align: center;
+				font-size: 45px;
+				color: red;
+			}
+			#pic, #line{
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<button type = "dope" onclick = "window.location.href='http://bit.ly/2f3MzeN'">Bodhi's Pictures</div>
+				<div class="col-md-4">
+					<button type = "dope" onclick = "window.location.href='http://bit.ly/2fNAsnz'">Bodhi's Videos</div>
+				<div class="col-md-4">
+					<button type = "dope" onclick = "window.location.href='https://en.wikipedia.org/wiki/Shiba_Inu'">About Bodhi</div>
+			</div>
+		</div>
+		
+		<p class = "swag">
+			<strong>My Dog Bodhi</strong>
+		</p>
+
+		<div class = "Bodhi">
+			<p id = "pic">
+			<img src = "https://pbs.twimg.com/media/Cbg6oKqUkAI2PAB.jpg">
+			</p>
+			<div id = "line" style = "color:red">
+					<li>
+						<a href="http://www.google.com" target="_blank">
+						His favorite food is kibble.
+						</a>
+					</li>
+					<li>
+						<a href = "https://pbs.twimg.com/media/Cbg6oKqUkAI2PAB.jpg" target = "_blank">
+						He is a <span style="color:red"> doge </span>
+						</a>
+					</li>
+					<li>He likes to get lit</li>
+				
+			</div>
+		</div>
+		<div class = "input">
+			
+			<button type = "button" onclick = "testInput()">How many treats would you like to give Bodhi?</button>
+			<script>
+				function testInput() {
+				// Create variable to store test result
+				var text;
+				// Get the value of the input field with id="numb"
+				var x = document.getElementById("numericInput").value;
+				if (isNaN(x) || x < 0 || x > 99) {
+				text = "That's fucked up";
+				} else {
+				text = "Bodhi says thank you!";
+				}
+				// Display result
+				document.getElementById("result").innerHTML = text;
+				}
+			</script>
+			<input id="numericInput" type="number">
+			<p id="result"></p>
+		</div>
+	</body>
+</html>
